@@ -11,7 +11,7 @@ class App extends Component {
       lines: '共感覚\nabc',
       colors: [
         '#ff5555',
-        '#448800',
+        '#0044ff',
         '#44dd44',
         BLACK,
         BLACK,
