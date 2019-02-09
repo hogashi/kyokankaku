@@ -13,11 +13,10 @@ const renderCharsets = ({ lines }) => {
     if (/^ *$/.test(line)) {
         return null;
     }
-    const chars = line.split('').map((char, charIndex) => {
+    const chars = line.split('').map((char) => {
       colorIndex += 1;
       return <CharSet key={char} char={char} defaultColor={defaultColors[colorIndex]} />;
     });
-    colorIndex += 1;
     return (
       <div className="charLine" key={lineIndex}>
         {chars}
