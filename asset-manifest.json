@@ -1,13 +1,13 @@
 {
-  "main.css": "/static/css/main.90dfc6a4.chunk.css",
-  "main.js": "/static/js/main.c8136093.chunk.js",
-  "main.js.map": "/static/js/main.c8136093.chunk.js.map",
-  "static/js/1.64008741.chunk.js": "/static/js/1.64008741.chunk.js",
-  "static/js/1.64008741.chunk.js.map": "/static/js/1.64008741.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/main.90dfc6a4.chunk.css.map": "/static/css/main.90dfc6a4.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.878653b28f4fcdff88aa1c50603329cc.js": "/precache-manifest.878653b28f4fcdff88aa1c50603329cc.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "/kyokankaku/static/css/main.90dfc6a4.chunk.css",
+  "main.js": "/kyokankaku/static/js/main.9436fa6e.chunk.js",
+  "main.js.map": "/kyokankaku/static/js/main.9436fa6e.chunk.js.map",
+  "static/js/1.64008741.chunk.js": "/kyokankaku/static/js/1.64008741.chunk.js",
+  "static/js/1.64008741.chunk.js.map": "/kyokankaku/static/js/1.64008741.chunk.js.map",
+  "runtime~main.js": "/kyokankaku/static/js/runtime~main.7fd3163d.js",
+  "runtime~main.js.map": "/kyokankaku/static/js/runtime~main.7fd3163d.js.map",
+  "static/css/main.90dfc6a4.chunk.css.map": "/kyokankaku/static/css/main.90dfc6a4.chunk.css.map",
+  "index.html": "/kyokankaku/index.html",
+  "precache-manifest.9802e26e915e9a06dfcdeefff53e5123.js": "/kyokankaku/precache-manifest.9802e26e915e9a06dfcdeefff53e5123.js",
+  "service-worker.js": "/kyokankaku/service-worker.js"
 }
