@@ -5,8 +5,8 @@ const { useState } = React;
 const BLACK = '#000000';
 const WHITE = '#ffffff';
 
-export default ({ char }) => {
-  const [colorCode, setColorCode] = useState(BLACK);
+export default ({ char, defaultColor }) => {
+  const [colorCode, setColorCode] = useState(defaultColor || BLACK);
 
   if (char === ' ') {
     return <div className="charSet space"></div>;
