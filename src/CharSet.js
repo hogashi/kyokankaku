@@ -6,7 +6,8 @@ const BLACK = '#000000';
 const WHITE = '#ffffff';
 
 export default ({ char, defaultColor }) => {
-  const [colorCode, setColorCode] = useState(defaultColor || BLACK);
+  const defaultCode = '共感覚'.indexOf(char) !== -1 ? defaultColor || BLACK : BLACK;
+  const [colorCode, setColorCode] = useState(defaultCode);
 
   if (char === ' ') {
     return <div className="charSet space"></div>;

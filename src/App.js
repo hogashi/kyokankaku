@@ -15,7 +15,7 @@ const renderCharsets = ({ lines }) => {
     }
     const chars = line.split('').map((char, charIndex) => {
       colorIndex += 1;
-      return <CharSet key={charIndex} char={char} defaultColor={defaultColors[colorIndex]} />;
+      return <CharSet key={char} char={char} defaultColor={defaultColors[colorIndex]} />;
     });
     colorIndex += 1;
     return (
