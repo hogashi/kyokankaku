@@ -8,6 +8,10 @@ const WHITE = '#ffffff';
 export default ({ char }) => {
   const [colorCode, setColorCode] = useState(BLACK);
 
+  if (char === ' ') {
+    return <div className="charSet space"></div>;
+  }
+
   const [r, g, b] = colorCode.match(/[0-9a-f]{2}/ig).slice(0, 3).map(n => parseInt(n, 16));
   const charsetStyle = {
     // 180以上明るかったら背景を黒にする

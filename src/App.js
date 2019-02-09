@@ -6,8 +6,8 @@ const { useState } = React;
 
 const renderCharsets = ({ lines }) => {
   const charLines = lines.split('\n').map((line, lineIndex) => {
-    if (line === '') {
-      return null;
+    if (/^ *$/.test(line)) {
+        return null;
     }
     const chars = line.split('').map((char, charIndex) =>
       <CharSet key={charIndex} char={char} />
