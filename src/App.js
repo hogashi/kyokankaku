@@ -4,25 +4,25 @@ import CharSet from './CharSet';
 
 const { useState } = React;
 
-
-const defaultColors = ['#ff5555', '#0044ff', '#44dd44'];
-
-const renderCharsets = ({ lines }) => {
+const CharLine = ({ line }) => {
+  if (/^ *$/.test(line)) {
+      return null;
+  }
+  const defaultColors = ['#ff5555', '#0044ff', '#44dd44'];
   let colorIndex = -1;
-  const charLines = lines.split('\n').map((line, lineIndex) => {
-    if (/^ *$/.test(line)) {
-        return null;
-    }
-    const chars = line.split('').map((char) => {
-      colorIndex += 1;
-      return <CharSet key={char} char={char} defaultColor={defaultColors[colorIndex]} />;
-    });
-    return (
-      <div className="charLine" key={lineIndex}>
-        {chars}
-      </div>
-    );
+  const chars = line.split('').map((char) => {
+    colorIndex += 1;
+    return <CharSet key={char} char={char} defaultColor={defaultColors[colorIndex]} />;
   });
+  return (
+    <div className="charLine">
+      {chars}
+    </div>
+  );
+};
+
+const CharSets = ({ lines }) => {
+  const charLines = lines.split('\n').map((line, lineIndex) => <CharLine line={line} key={lineIndex} />);
   return (
     <div className="charLines">
       {charLines}
@@ -38,7 +38,7 @@ export default () => {
       <textarea
         value={lines}
         onChange={(e) => setLines(e.target.value)}></textarea>
-      {renderCharsets({ lines })}
+      <CharSets lines={lines} />
     </div>
   );
 };
